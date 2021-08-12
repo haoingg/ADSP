@@ -1,0 +1,7 @@
+rm(list = ls())
+df4 <- read.csv('data/mySample.csv')
+save(df4, file='data/myObject1.Rdata')
+rm(list=ls())
+ls()
+load('data/myObject1.Rdata')
+print(df4)
